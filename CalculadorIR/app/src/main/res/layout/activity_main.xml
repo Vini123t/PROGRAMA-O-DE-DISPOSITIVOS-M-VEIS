@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cálculo IR"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#D3D3D3"
+        android:padding="16dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Renda Bruta Mensal:"
+        android:textSize="18sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etRendaBrutaMensal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:inputType="numberDecimal"
+        android:hint="Ex: 3000"
+        android:gravity="end"
+        android:background="@drawable/edittext_border" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dependentes:"
+        android:textSize="18sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etDependentes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:inputType="number"
+        android:hint="Ex: 2"
+        android:gravity="end"
+        android:background="@drawable/edittext_border" />
+
+    <!-- Campo de Total Deduções -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Deduções (saúde, educação, etc):"
+        android:textSize="18sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etTotalDeducoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:inputType="numberDecimal"
+        android:hint="Ex: 5000"
+        android:gravity="end"
+        android:background="@drawable/edittext_border" />
+
+
+    <Button
+        android:id="@+id/btnCalcularIR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:layout_gravity="center"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Renda Bruta Anual: "
+        android:textSize="18sp"
+        android:paddingTop="16dp" />
+
+
+    <TextView
+        android:id="@+id/tvRendaBrutaAnual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingTop="4dp"
+        android:gravity="end" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Base de Cálculo: "
+        android:textSize="18sp"
+        android:paddingTop="8dp" />
+
+
+    <TextView
+        android:id="@+id/tvBaseDeCalculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingTop="4dp"
+        android:gravity="end" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Imposto Devido: "
+        android:textSize="18sp"
+        android:paddingTop="8dp" />
+
+
+    <TextView
+        android:id="@+id/tvImpostoDevido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingTop="4dp"
+        android:gravity="end" />
+
+</LinearLayout>
